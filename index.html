@@ -6,25 +6,27 @@
     <title>Portfolio</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="main.css" />
   </head>
   <body>
-   <!--<nav role="navigation">Nav</nav>-->
+
     <main role="main">
+
         <section class='home' role="banner">
-            <h2>Hi I'm Peter. I'm a JavaScript developer in Ann Arbor, MI</h2>
+            <h1>Hi, I'm Peter. I'm a JavaScript developer in Ann Arbor, MI</h1>
+            <h3>I<span class="what-i-do"></span></h3>
         </section>
 
         <section class='about-me' role='about-me'>
           <div class="item-photo-container">
-            <!--<img>-->
+            <img src='./assets/me.png' alt='me' />
           </div>
           <div class="item-content-container">
             <p>
-              I'm a web developer and recent graduate of the Front End Web 
-              Development Bootcamp at Thinkful. I love coding because there 
-              is no better puzzle than a complicated and nuanced bug.
-              If I'm not coding, I might be traveling somewhere new. I'm lucky to have 
-              had a wealth of international experiences that have broadened
+              I'm a full stack web developer looking for a great company to start my  
+              career. I love coding because there is no better puzzle than a complicated 
+              and nuanced bug. If I'm not coding, I might be traveling somewhere new. I'm 
+              lucky to have had a wealth of international experiences that have broadened
               my perspectives and opened me up to the world. 
             </p>
             <p>
@@ -60,6 +62,22 @@
         </section>
         
        <footer role="contact">Footer</footer>
+
     </main>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/1.1.7/typed.min.js"></script>
+    <script src="script.js"></script>
+    <script>
+      $(function(){
+        $(".what-i-do").typed({
+            strings: [" build web apps.", " love to learn.", " like maps and data analysis.", " enjoy playing sports."],
+            typeSpeed: 100,
+            loop: true
+        });
+      });
+    </script>
+
   </body>
 </html>

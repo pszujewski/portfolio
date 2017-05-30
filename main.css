@@ -1,0 +1,37 @@
+/*
+http://jasondobrowner.com/
+http://paulhyunchong.com/
+http://www.timpaik.co/
+https://brandcolors.net/
+*/
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.home {
+  background-color: #3eb991;
+  color: #fff;
+}
+
+.about-me {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.item-photo-container {
+  width: 100%;
+  text-align: center;
+}
+
+.item-photo-container img {
+  display: inline-block;
+  height: 235px;
+  width: 235px;
+  border-radius: 100%;
+}
