@@ -12,14 +12,14 @@
   <body>
 
       <header class='home' role="banner">
-        <h1>Hi, I'm Peter.</h1>
+        <h1>Hi, I'm Peter Szujewski.</h1>
         <h2 class='home-title'>Full Stack Web Developer in Ann Arbor, MI</h2>
         <h2 class='typing'>I<span class="sub-header"></span></h2>
       </header>
 
       <main role="main">
 
-        <section class='about-me' role='about-me'>
+        <section class='about-me hideme' role='about-me'>
           <h2>About Me</h2>
           <div class='about-me-flex'>
             <div class="item-photo-container">
@@ -41,7 +41,7 @@
           </div>
         </section>
 
-        <section class='projects-container' role='projects'>
+        <section class='projects-container hideme' role='projects'>
 
           <h2>Projects</h2>
 
@@ -114,13 +114,14 @@
         </div>
         <div class='btm-bin'>
           <p>Created by Peter Szujewski</p>
-          <a href="#">Take me to the top</a>
+          <a class='js-go-to-top'>Take me to the top</a>
         </div>
       </footer>
 
     <!-- Scripts -->
     <script src="https://use.fontawesome.com/644aee1959.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/jquery.scrollto/2.1.2/jquery.scrollTo.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/1.1.7/typed.min.js"></script>
     <script src="script.js"></script>
     <script>
