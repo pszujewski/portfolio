@@ -6,33 +6,20 @@
     <title>Portfolio</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="https://fonts.googleapis.com/css?family=Damion" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Damion|Merriweather" rel="stylesheet">
     <link rel="stylesheet" href="main.css" />
   </head>
   <body>
-      <!--content-->
+
       <header class='home' role="banner">
-
-        <!--<div class='cover'></div>-->
-        <div class='content'>
-          <h1>Hi, I'm Peter.</h1>
-          <div class='title-sub'>
-            <h2>JavaScript Developer</h2>
-            <h2>Ann Arbor, MI</h2>
-          </div>
-          <h2 class='typing'>I<span class="sub-header"></span></h2>
-          <button>Check out my resume</button>
-          <a class='scroll-target' href="#">
-            <span>Learn more about me and what I do</span>
-            <i class="fa fa-chevron-down" aria-hidden="true"></i>
-          </a>
-        </div>
-
+        <h1>Hi, I'm Peter Szujewski.</h1>
+        <h2 class='home-title'>Full Stack Web Developer in Ann Arbor, MI</h2>
+        <h2 class='typing'>I<span class="sub-header"></span></h2>
       </header>
 
       <main role="main">
 
-        <section class='about-me' role='about-me'>
+        <section class='about-me hideme' role='about-me'>
           <h2>About Me</h2>
           <div class='about-me-flex'>
             <div class="item-photo-container">
@@ -54,55 +41,61 @@
           </div>
         </section>
 
-        <section class='projects-container' role='projects'>
+        <section class='projects-container hideme' role='projects'>
 
           <h2>Projects</h2>
 
           <section class='project oui' role='project-1'>
               <h3>Oui Verb</h3>
-              <div class='description'>
-                <p>
-                   Oui Verb provides 24 unique quizzes based on a spaced-repetition algorithm 
-                   to help students of French learn to conjugate verbs.
-                </p>
-                <p><span class='tool-wrap'>Tools</span> React, Redux, Node, Express, MongoDB, Passport, Google OAuth API</p>
-                <button><a href='https://ouiverb.herokuapp.com/'>Check it out</a></button>
-                <button><a>See the code</a></button>
-              </div>
-              <div class='project-image-wrap'> 
-                <img src="assets/oui-verb.png" alt="Oui-Verb" />
+              <div class='project-wrap'>
+                <div class='description'>
+                  <p>
+                    Oui Verb provides 24 unique quizzes based on a spaced-repetition algorithm 
+                    to help students of French learn to conjugate verbs.
+                  </p>
+                  <p><span class='tool-wrap'>Tools</span> React, Redux, Node, Express, MongoDB, Passport, Google OAuth API</p>
+                  <button><a href='https://ouiverb.herokuapp.com/'>Check it out</a></button>
+                  <button><a>See the code</a></button>
+                </div>
+                <div class='project-image-wrap'> 
+                  <img src="assets/oui-verb.png" alt="Oui-Verb" />
+                </div>
               </div>
           </section>
           
           <section class='project d3' role='project-2'>
-              <h3>Visualizing Linguistic Diversity in the U.S.</h3>
-              <div class='description'>
-                <p>
-                   A data visualization project that brings U.S. census data to life through
-                   charts and maps
-                </p>
-                <p><span class='tool-wrap'>Tools</span> D3, SVG, jQuery, jQueryUI, ES6</p>
-                <button><a href="https://github.com/pszujewski/d3-language-diversity">Check it out</a></button>
-                <button><a href="https://pszujewski.github.io/d3-language-diversity/">See the code</a></button>
-              </div>
-              <div class='project-image-wrap'> 
-                <img src="assets/d3-map.png" alt="d3-Map" />
+              <h3>Linguistic Diversity in the U.S.</h3>
+              <div class='project-wrap'>
+                <div class='project-image-wrap'> 
+                  <img src="assets/d3-map.png" alt="d3-Map" />
+                </div>
+                <div class='description'>
+                  <p>
+                    A data visualization project that brings U.S. census data to life through
+                    charts and maps
+                  </p>
+                  <p><span class='tool-wrap'>Tools</span> D3, SVG, jQuery, jQueryUI, ES6</p>
+                  <button><a href="https://github.com/pszujewski/d3-language-diversity">Check it out</a></button>
+                  <button><a href="https://pszujewski.github.io/d3-language-diversity/">See the code</a></button>
+                </div>
               </div>
           </section>
 
           <section class='project' role='project-3'>
               <h3>Movie Tracks</h3>
-              <div class='description'>
-                <p>
-                  A web API mash-up that allows users to listen 
-                  and keep track of their favorite movie soundtracks. 
-                </p>
-                <p><span class='tool-wrap'>Tools</span> React, Redux, Node, Express, MongoDB, Mongoose, Passport</p>
-                <button><a>Check it out</a></button>
-                <button><a>See the code</a></button>
-              </div>
-              <div class='project-image-wrap'> 
-                <img src="assets/movie-tracks.png" alt="Movie-Tracks" />
+              <div class='project-wrap'>
+                <div class='description'>
+                  <p>
+                    A web API mash-up that allows users to listen 
+                    and keep track of their favorite movie soundtracks. 
+                  </p>
+                  <p><span class='tool-wrap'>Tools</span> React, Redux, Node, Express, MongoDB, Mongoose, Passport</p>
+                  <button><a>Check it out</a></button>
+                  <button><a>See the code</a></button>
+                </div>
+                <div class='project-image-wrap'> 
+                  <img src="assets/movie-tracks.png" alt="Movie-Tracks" />
+                </div>
               </div>
           </section>
 
@@ -111,20 +104,24 @@
       </main>
 
       <footer role="contact">
-        <h2>Contact</h2>
-        <h3>Are you a developer in Detroit or Ann Arbor?</h3>
-        <h3>I'd love to meet! Let's have a coffee.</h3>
+        <h1>Contact</h1>
+        <h2>Are you looking for a developer in Detroit or Ann Arbor?</h3>
+        <h2>Contact me at pszujewski@gmail.com</h3>
         <div class='contact-icon-bin'>
-        <i class="fa fa-envelope-o" aria-hidden="true"></i>
-        <i class="fa fa-linkedin-square" aria-hidden="true"></i>
-        <i class="fa fa-github" aria-hidden="true"></i>
+          <i class="fa fa-envelope-o" aria-hidden="true"></i>
+          <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+          <i class="fa fa-github" aria-hidden="true"></i>
         </div>
-        <a href="#">Take me to the top</a>
+        <div class='btm-bin'>
+          <p>Created by Peter Szujewski</p>
+          <a class='js-go-to-top'>Take me to the top</a>
+        </div>
       </footer>
 
     <!-- Scripts -->
     <script src="https://use.fontawesome.com/644aee1959.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/jquery.scrollto/2.1.2/jquery.scrollTo.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/1.1.7/typed.min.js"></script>
     <script src="script.js"></script>
     <script>
