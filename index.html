@@ -8,6 +8,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://fonts.googleapis.com/css?family=Damion|Merriweather" rel="stylesheet">
     <link rel="stylesheet" href="main.css" />
+    
+    <link rel="apple-touch-icon" sizes="180x180" href="favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicons/favicon-16x16.png">
+    <link rel="manifest" href="favicons/manifest.json">
+    <link rel="mask-icon" href="favicons/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="theme-color" content="#ffffff">
+
   </head>
   <body>
 
@@ -20,21 +28,28 @@
       <main role="main">
 
         <section class='about-me hideme' role='about-me'>
-          <h2>About Me</h2>
-          <div class='about-me-flex'>
+          <h2 class='title'>About Me</h2>
+          <div>
             <div class="item-photo-container">
               <img src='./assets/me.png' alt='me' />
             </div>
             <div class="item-content-container">
               <p>
-                I'm a full stack web developer looking for a great company to start my  
-                career. I love coding because there is no better puzzle than a complicated 
-                and nuanced bug. When not coding, I might be traveling somewhere new. I'm 
-                lucky to have had a wealth of international experiences that have broadened
-                my perspectives and opened me up to the world. 
+                I'm a full stack web developer originally from Chicago and 
+                currently based out of Ann Arbor, MI. I enjoy building intuitive
+                 web apps with my primary tools of choice: React, Redux, NodeJS, 
+                 Express and MongoDB or PostgreSQL. As cliché as it may sound, 
+                 I am drawn to programming in JavaScript because of the endless 
+                 learning and creative opportunities. Many developers loathe JS 
+                 for its unpredictability, pointing out that there seems to be a 
+                 hot new front-end framework every other year. For me, this is 
+                 actually a huge plus. I love the dynamism and unpredictability 
+                 of JS, and am always happy to dive into new technologies. 
               </p>
               <p>
-                My personal motto is 'stay curious' because I believe that true 
+                Besides my interest in JS, I am passionate about human and 
+                computer languages, travel, board games and baseball. My 
+                personal motto is 'stay curious' because I believe that true 
                 intelligence is born of deep curiosity.
               </p>
             </div>
@@ -43,58 +58,76 @@
 
         <section class='projects-container hideme' role='projects'>
 
-          <h2>Projects</h2>
+          <h2 class='title'>Projects</h2>
 
           <section class='project oui' role='project-1'>
-              <h3>Oui Verb</h3>
+              <h2>Oui Verb</h2>
               <div class='project-wrap'>
                 <div class='description'>
-                  <p>
-                    Oui Verb provides 24 unique quizzes based on a spaced-repetition algorithm 
-                    to help students of French learn to conjugate verbs.
-                  </p>
-                  <p><span class='tool-wrap'>Tools</span> React, Redux, Node, Express, MongoDB, Passport, Google OAuth API</p>
-                  <button><a href='https://ouiverb.herokuapp.com/'>Check it out</a></button>
-                  <button><a>See the code</a></button>
+                  <div class="description-content-wrap">
+                    <p>
+                      Oui Verb provides 24 unique quizzes based on a spaced-repetition algorithm 
+                      to help students of French learn to conjugate verbs.
+                    </p>
+                    <p><span class='tool-wrap'>Tools</span> React, Redux, Node, Express, MongoDB, Passport, Google OAuth API</p>
+                    <a href='https://ouiverb.herokuapp.com/'>Check it out</a>
+                    <a href="https://github.com/wshuang6/french-verbs-app.git">See the code</a>
+                  </div>
                 </div>
-                <div class='project-image-wrap'> 
-                  <img src="assets/oui-verb.png" alt="Oui-Verb" />
-                </div>
+                <div> 
+                  <div class='project-image-wrap'> 
+                      <a href="https://ouiverb.herokuapp.com/" class='project-image-anchor'>
+                        <img src="assets/oui-verb.png" alt="Oui-Verb" />
+                      </a>
+                  </div>
+                </div> 
               </div>
           </section>
           
           <section class='project d3' role='project-2'>
-              <h3>Linguistic Diversity in the U.S.</h3>
+              <h2>Visualizing Linguistic Diversity</h2>
               <div class='project-wrap'>
-                <div class='project-image-wrap'> 
-                  <img src="assets/d3-map.png" alt="d3-Map" />
-                </div>
+                <div> 
+                  <div class='project-image-wrap'>
+                    <a href="https://pszujewski.github.io/d3-language-diversity/" class='project-image-anchor'> 
+                      <img src="assets/d3-map.png" alt="d3-Map" />
+                    </a>
+                  </div>
+                </div> 
                 <div class='description'>
-                  <p>
-                    A data visualization project that brings U.S. census data to life through
-                    charts and maps
-                  </p>
-                  <p><span class='tool-wrap'>Tools</span> D3, SVG, jQuery, jQueryUI, ES6</p>
-                  <button><a href="https://github.com/pszujewski/d3-language-diversity">Check it out</a></button>
-                  <button><a href="https://pszujewski.github.io/d3-language-diversity/">See the code</a></button>
+                  <div class="description-content-wrap">
+                    <p>
+                      A data visualization project that brings U.S. census data to life through
+                      charts and maps
+                    </p>
+                    <p><span class='tool-wrap'>Tools</span> D3, SVG, jQuery, jQueryUI, ES6, Webpack</p>
+                    <a href="https://pszujewski.github.io/d3-language-diversity/">Check it out</a>
+                    <a href="https://github.com/pszujewski/language-diversity-data-viz">See the code</a>
+                  </div>
                 </div>
               </div>
           </section>
 
           <section class='project' role='project-3'>
-              <h3>Movie Tracks</h3>
+              <h2>Movie Tracks</h2>
               <div class='project-wrap'>
                 <div class='description'>
-                  <p>
-                    A web API mash-up that allows users to listen 
-                    and keep track of their favorite movie soundtracks. 
-                  </p>
-                  <p><span class='tool-wrap'>Tools</span> React, Redux, Node, Express, MongoDB, Mongoose, Passport</p>
-                  <button><a>Check it out</a></button>
-                  <button><a>See the code</a></button>
+                  <div class="description-content-wrap">
+                    <p>
+                      A web API mash-up that allows users to listen 
+                      and keep track of their favorite movie soundtracks. 
+                    </p>
+                    <p><span class='tool-wrap'>Tools</span> React, Redux, Node, Express, MongoDB, Mongoose, Passport</p>
+                    <a href="https://still-temple-36032.herokuapp.com/">Check it out</a>
+                    <a href="https://github.com/pszujewski/movie-tracks-fullstack">See the code</a>
+                  </div>  
                 </div>
-                <div class='project-image-wrap'> 
-                  <img src="assets/movie-tracks.png" alt="Movie-Tracks" />
+                <div> 
+                  <div class='project-image-wrap'>
+                    <a href="https://still-temple-36032.herokuapp.com/" class='project-image-anchor'>  
+                      <img src="assets/movie-tracks.png" alt="Movie-Tracks" />
+                    </a>
+                  </div>
                 </div>
               </div>
           </section>
@@ -108,9 +141,9 @@
         <h2>Are you looking for a developer in Detroit or Ann Arbor?</h3>
         <h2>Contact me at pszujewski@gmail.com</h3>
         <div class='contact-icon-bin'>
-          <i class="fa fa-envelope-o" aria-hidden="true"></i>
-          <i class="fa fa-linkedin-square" aria-hidden="true"></i>
-          <i class="fa fa-github" aria-hidden="true"></i>
+          <a href="mailto:pszujewski@gmail.com"><i class="fa fa-envelope-o" aria-hidden="true"></i></a>
+          <a href="https://www.linkedin.com/in/pszujewski/"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
+          <a href="https://github.com/pszujewski"><i class="fa fa-github" aria-hidden="true"></i></a>
         </div>
         <div class='btm-bin'>
           <p>Created by Peter Szujewski</p>
@@ -127,7 +160,7 @@
     <script>
       $(function(){
         $(".sub-header").typed({
-            strings: [" love all things JavaScript.", " build web apps.", " love to learn.", " collect maps!", " enjoy playing team sports."],
+            strings: [" love all things JavaScript.", " build web apps.", " love to learn.", " collect maps!", " enjoy riding bikes."],
             typeSpeed: 100,
             loop: true
         });
