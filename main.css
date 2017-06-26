@@ -140,7 +140,7 @@ p {
   flex-wrap: wrap;
 }
   
-.d3 .project-wrap {
+.reverse {
   flex-wrap: wrap-reverse;
 }
 
