@@ -88,8 +88,8 @@ p {
 
 /* About Me section */
 .about-me {
-  padding-top: 100px;
-  padding-bottom: 50px;
+  padding-top: 10px;
+  padding-bottom: 15px;
 }
 
 .item-photo-container {
@@ -124,7 +124,7 @@ p {
   padding-bottom: 30px;
 }
 
-.project .title {
+.projects-container .title {
   margin-bottom: 20px;
 }
 

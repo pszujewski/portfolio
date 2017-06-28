@@ -11,7 +11,7 @@ function animateScroll(window, hideme) {
 
         if (isAboutMe && !aboutMeIsVisible || !isAboutMe && aboutMeIsVisible) {
 
-          const object_target_position = el.position().top + 120;
+          const object_target_position = el.position().top + 50;
 
           const bottom_of_window = window.scrollTop() + window.height();
 
