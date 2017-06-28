@@ -124,13 +124,17 @@ p {
   padding-bottom: 30px;
 }
 
+.project .title {
+  margin-bottom: 20px;
+}
+
 .oui {
   padding-top: 20px;
 }
 
 .project h2 {
   font-family: 'Damion', Arial, Helvetica, sans-serif;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
   font-size: 36px;
 }
 
